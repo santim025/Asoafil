@@ -363,7 +363,7 @@ function ContactCard({
         <div className="text-[11px] font-semibold uppercase tracking-wider text-subtle">
           {label}
         </div>
-        <div className="mt-0.5 truncate text-sm font-semibold text-foreground">
+        <div className="mt-0.5 break-words text-sm font-semibold text-foreground">
           {value}
         </div>
         {cta && (

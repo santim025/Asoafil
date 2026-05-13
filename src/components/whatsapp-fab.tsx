@@ -9,10 +9,40 @@ export function WhatsappFab() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setVisible(window.scrollY > 480);
+    let scrolled = false;
+    let nearWhatsapp = false;
+
+    const apply = () => setVisible(scrolled && !nearWhatsapp);
+
+    const onScroll = () => {
+      scrolled = window.scrollY > 480;
+      apply();
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+
+    const contactSection = document.getElementById("contacto");
+    const footer = document.querySelector("footer");
+    const targets = [contactSection, footer].filter(
+      (el): el is HTMLElement => el instanceof HTMLElement,
+    );
+
+    let observer: IntersectionObserver | null = null;
+    if (targets.length > 0 && "IntersectionObserver" in window) {
+      observer = new IntersectionObserver(
+        (entries) => {
+          nearWhatsapp = entries.some((e) => e.isIntersecting);
+          apply();
+        },
+        { rootMargin: "0px 0px -10% 0px", threshold: 0 },
+      );
+      targets.forEach((t) => observer!.observe(t));
+    }
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      observer?.disconnect();
+    };
   }, []);
 
   return (
