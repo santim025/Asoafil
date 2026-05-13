@@ -19,7 +19,7 @@ const empresaLinks = [
   { href: "#proceso", label: "Cómo trabajamos" },
   { href: "#clientes", label: "Testimonios" },
   { href: "#faq", label: "Preguntas frecuentes" },
-  { href: "#contacto", label: "Contacto" },
+  { href: "#contacto", label: "Contáctanos" },
 ];
 
 export function SiteFooter() {
@@ -68,8 +68,13 @@ export function SiteFooter() {
                   className="h-9 w-9 object-contain"
                 />
               </span>
-              <span className="font-display text-lg font-bold tracking-tight">
-                {siteConfig.name}
+              <span className="flex flex-col">
+                <span className="font-display text-lg font-bold leading-tight tracking-tight">
+                  {siteConfig.name}
+                </span>
+                <span className="text-[11px] font-medium uppercase tracking-[0.14em] text-white/55">
+                  Asesoría contable
+                </span>
               </span>
             </Link>
 
