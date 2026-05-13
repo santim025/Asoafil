@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: "%s | Asoafil SAS",
   },
   description:
-    "Asesoría contable integral para empresas en Colombia. Contabilidad, SG-SST, afiliaciones y creación de empresas. Más de 14 años acompañando el crecimiento empresarial.",
+    "Asesoría contable, SG-SST, afiliaciones y creación de empresas en Colombia. +14 años y +100 empresas confían en Asoafil SAS.",
   keywords: [
     "asesoría contable",
     "contabilidad empresarial",
