@@ -108,9 +108,9 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
               className="mt-6 max-w-xl text-lg leading-relaxed text-muted"
             >
-              Acompañamos el crecimiento de tu empresa con soluciones integrales en
+              Asesoría contable integral para que tu empresa crezca con tranquilidad:
               contabilidad, SG-SST, afiliaciones y creación de empresas. Más de 100
-              empresas confían en nosotros para su cumplimiento normativo.
+              empresas merecen y confían en nuestro acompañamiento normativo.
             </motion.p>
 
             <motion.div

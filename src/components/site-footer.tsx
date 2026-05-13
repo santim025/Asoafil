@@ -62,7 +62,7 @@ export function SiteFooter() {
               <span className="inline-flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl bg-white/10 ring-1 ring-white/15">
                 <Image
                   src="/logo.png"
-                  alt=""
+                  alt="Logo Asoafil SAS"
                   width={36}
                   height={36}
                   className="h-9 w-9 object-contain"

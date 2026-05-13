@@ -48,7 +48,7 @@ export function SiteHeader() {
             <span className="relative inline-flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl bg-brand-50 ring-1 ring-brand-100">
               <Image
                 src="/logo.png"
-                alt=""
+                alt="Logo Asoafil SAS - Asesoría contable"
                 width={36}
                 height={36}
                 className="h-9 w-9 object-contain"
